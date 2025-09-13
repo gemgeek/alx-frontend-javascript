@@ -58,9 +58,9 @@ interface StudentClassInterface {
 }
 
 // Implement the class
-class StudentClass implements StudentClassInterface {
-  private firstName: string;
-  private lastName: string;
+class StudentClass {
+  firstName: string;
+  lastName: string;
 
   constructor(firstName: string, lastName: string) {
     this.firstName = firstName;
@@ -81,4 +81,3 @@ const student: StudentClassInterface = new StudentClass("Matilda", "Gbeve");
 console.log(student.displayName()); // Matilda
 console.log(student.workOnHomework()); // Currently working
 
-export { StudentClass };
