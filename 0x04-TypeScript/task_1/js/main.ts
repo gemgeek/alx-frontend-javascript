@@ -34,14 +34,14 @@ const director1: Director = {
 
 console.log(director1);
 
-// Function interface
+// Interface for the function
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
 // Function implementation
-const printTeacher: printTeacherFunction = (firstName, lastName) => {
-  return `${firstName.charAt(0)}. ${lastName}`;
-};
+function printTeacher(firstName: string, lastName: string): string {
+  return `${firstName[0]}. ${lastName}`;
+}
 
 console.log(printTeacher("John", "Doe")); // J. Doe
